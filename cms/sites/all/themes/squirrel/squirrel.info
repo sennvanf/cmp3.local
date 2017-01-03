@@ -10,6 +10,7 @@ regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[content] = Content
 regions[sidebar_first] = Sidebar
+regions[sidebar_right] = Sidebar
 regions[footer] = Footer
 regions[footer_firstcolumn] = Footer first column
 regions[footer_secondcolumn] = Footer second column

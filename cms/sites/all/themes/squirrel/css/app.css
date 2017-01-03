@@ -39,7 +39,7 @@ body {
 /* Header */
 
 #header {
-    margin-top: 0px;
+    margin-top: 10px;
 }
 /* Footer */
 
@@ -133,4 +133,13 @@ body {
 }
 #loginpage .password-suggestions.description {
 	display: none !important;
+}
+
+/* Page - groepen */
+
+.item-list ul {
+}
+.item-list ul li {
+	list-style: none;
+	margin: 0.4em 0;
 }

@@ -105,19 +105,22 @@
                 <?php print render($page['header']); ?>
                 <div class="linkicon">
                     <?php if ($secondary_menu): ?>
-                        <a href="/?q=node/add"><img src="<?php print base_path() . path_to_theme() . '/' . 'images/new.png'; ?>"/></a>
-                        <a href="/?q=transactions"><img src="<?php print base_path() . path_to_theme() . '/' . 'images/squirrel.png'; ?>"/></a>
+                        <a href="/node/add"><img src="<?php print base_path() . path_to_theme() . '/' . 'images/new.png'; ?>"/></a>
+                        <a href="/transactions"><img src="<?php print base_path() . path_to_theme() . '/' . 'images/squirrel.png'; ?>"/></a>
                         <div id="secondary-menu" class="dropdown navigation">
-                            <a class="dropbtn"><img  src="<?php print base_path() . path_to_theme() . '/' . 'images/profile.png'; ?>"/></a>
+                            <a class="dropbtn">
+                                <img  src="<?php print base_path() . path_to_theme() . '/' . 'images/profile.png'; ?>"/>
+                                <div id="username">
+                                    <span><?php print $user->name;?></span>
+                                </div>
+                            </a>
                             <div class="dropdown-content">
                                 <?php print theme('links__system_secondary_menu', array(
                                     'links' => $secondary_menu
                                 )); ?>
                             </div>
                         </div> <!-- /#secondary-menu -->
-                        <div id="username">
-                            <span><?php print $user->name;?></span>
-                        </div>
+
 
                     <?php endif; ?>
                 </div>
@@ -133,24 +136,11 @@
         <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
 
                 <?php if ($breadcrumb): ?>
-                    <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+                    <div id="breadcrumb"><?php print $breadcrumb. ' » '?><a><?php print $title; ?></a></div>
                 <?php endif; ?>
 
                 <div id="content" class="column"><div class="section">
                         <a id="main-content"></a>
-                        <?php print render($title_prefix); ?>
-                        <?php if ($title): ?>
-                            <h1 class="title" id="page-title">
-                                <?php print $title; ?>
-                            </h1>
-                        <?php endif; ?>
-                        <?php print render($title_suffix); ?>
-                        <?php if ($tabs): ?>
-                            <div class="tabs">
-                                <?php print render($tabs); ?>
-                            </div>
-                        <?php endif; ?>
-                        <?php print render($page['help']); ?>
                         <?php if ($action_links): ?>
                             <ul class="action-links">
                                 <?php print render($action_links); ?>
@@ -164,6 +154,22 @@
             </div></div> <!-- /#main, /#main-wrapper -->
 
         <div id="footer-wrapper"><div class="section">
+
+                <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn']): ?>
+                    <div id="footer-columns" class="clearfix">
+                        <div class="footerblock">
+                            <?php print render($page['footer_firstcolumn']); ?>
+                        </div>
+                        <div class="footerblock">
+                            <?php print render($page['footer_secondcolumn']); ?>
+                        </div>
+                        <div class="footerblock">
+                            <?php print render($page['footer_thirdcolumn']); ?>
+                        </div>
+
+
+                    </div> <!-- /#footer-columns -->
+                <?php endif; ?>
 
                 <?php if ($page['footer']): ?>
                     <div id="footer" class="clearfix">
