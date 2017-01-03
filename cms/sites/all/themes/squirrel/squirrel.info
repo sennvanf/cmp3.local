@@ -1,0 +1,16 @@
+name = Squirrel
+description = Thema voor LETS-site van cmp3
+core = 7.x
+
+stylesheets[all][] = css/app.css
+stylesheets[all][] = css/style.css
+
+regions[header] = Header
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[content] = Content
+regions[sidebar_first] = Sidebar
+regions[footer] = Footer
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column

@@ -251,7 +251,7 @@ $databases = array (
     array (
       'database' => 'cmp3',
       'username' => 'root',
-      'password' => 'bitnami',
+      'password' => 'root',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
@@ -290,7 +290,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'S-NiGTKyPhcFPWxF9AuA-unAvfK_unz1kHIFsx9FJWI';
+$drupal_hash_salt = 'ViJRVOAJPa1MSb9lEiNh-CXNfRtgce5gq7OJAs_vjVk';
 
 /**
  * Base URL (optional).

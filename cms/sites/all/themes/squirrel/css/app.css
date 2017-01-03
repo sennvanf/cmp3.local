@@ -1,0 +1,136 @@
+/* Admin */
+
+html body.admin-menu {
+    margin-top: 0 !important;
+	padding-top: 29px;
+}
+
+/* Page */
+
+body {
+	margin: 0;
+	background-color: rgb(225,238,226);
+	font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+	min-width: 780px;
+	position:relative;
+	top: 0
+}
+#page-wrapper {
+	padding-left: 210px;
+	height: 100%;
+}
+#main {
+	padding: 50px;
+	padding-top: 20px;
+}
+
+/* Sidebar */
+
+.sidebar {
+	float: left;
+	height: 100vh;
+	width: 210px;
+	top: 0;
+	position: fixed;
+	background-color: rgb(47, 171, 102);
+	z-index: 2;
+}
+
+/* Header */
+
+#header {
+    margin-top: 0px;
+}
+/* Footer */
+
+#footer-wrapper {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-left: 210px;
+}
+
+/* Login */
+
+/* Login - footer */
+
+#loginpage #footer-wrapper {
+	padding-left: 0px;
+}
+
+/* Login - page */
+
+#loginpage {
+	min-height: 100vh;
+	background-color: rgb(47, 171, 102);
+}
+#loginpage #page-wrapper {
+	padding-left: 0px;
+}
+#loginpage #main {
+	text-align: center;
+	vertical-align: middle;
+}
+#loginpage #main img {
+	width: 150px;
+	margin-top: 10vh;
+	margin-bottom: 8vh;
+}
+#loginpage #content{
+	width: 300px;
+	margin: 0 auto;
+	text-align: left;
+}
+#loginpage label {
+	color: white;
+	font-weight: 400;
+}
+#loginpage label span {
+	display: none;
+}
+#loginpage .form-item {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#loginpage input.form-text {
+	width: 284px;
+}
+#loginpage input {
+	width: 300px;
+}
+#loginpage .description {
+	display: none;
+}
+#loginpage .form-submit {
+	font-size: 1.1em;
+	font-weight: 500;
+	padding: 8px 20px;
+	background-color: #457552;
+}
+#loginpage p, #loginpage a {
+	text-align: center;
+	color: #C6C6C6;
+}
+
+/* Register - page */
+
+#loginpage #edit-field-user-avatar-und-0-upload {
+	padding-bottom: 10px;
+}
+
+#loginpage .password-strength {
+	float: inherit;
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#loginpage .password-confirm {
+	display: none;
+}
+#loginpage .password-confirm.form-text {
+	display: inherit;
+}
+#loginpage .password-suggestions.description {
+	display: none !important;
+}
