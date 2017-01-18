@@ -11,7 +11,7 @@ body {
 	margin: 0;
 	background-color: rgb(225,238,226);
 	font-family: "Avenir Next", "Helvetica Neue", sans-serif;
-	min-width: 780px;
+	min-width: 1080px;
 	position:relative;
 	top: 0
 }
@@ -63,33 +63,57 @@ body {
 
 #loginpage {
 	min-height: 100vh;
-	background-color: rgb(47, 171, 102);
+	background-color: rgb(225,238,226);
 }
 #loginpage #page-wrapper {
 	padding-left: 0px;
 }
+#loginpage #screenshot {
+	height: 60vh;
+	position: fixed;
+	top: 25vh;
+	left: 60%;
+}
 #loginpage #main {
-	text-align: center;
-	vertical-align: middle;
+	margin-left: 5vw;
+	width: 40vw;
 }
 #loginpage #main img {
-	width: 150px;
+	width: 120px;
 	margin-top: 10vh;
-	margin-bottom: 8vh;
+	margin-bottom: 1vh;
 }
-#loginpage #content{
-	width: 300px;
-	margin: 0 auto;
-	text-align: left;
+#loginpage p {
+	color: black;
+}
+#loginpage .form-submit {
+	margin-top: 2vh;
+	font-size: 1.1em;
+	font-weight: 500;
+	padding: 8px 20px;
+	background-color: rgb(33,158,92);
+}
+#loginpage .form-submit:hover {
+	background-color: #457552;
+}
+#loginpage .form-submit a {
+	color: white;
+	text-decoration: none;
+}
+#loginpage #footer-wrapper {
+	padding-left: 0px;
 }
 #loginpage label {
-	color: white;
 	font-weight: 400;
 }
 #loginpage label span {
 	display: none;
 }
-#loginpage .form-item {
+#loginpage .description {
+	display: none;
+}
+#loginpage .form-item,
+#loginpage .form-actions  {
 	margin-top: 3px;
 	margin-bottom: 3px;
 }
@@ -99,47 +123,80 @@ body {
 #loginpage input {
 	width: 300px;
 }
-#loginpage .description {
+
+/* Register - page */
+
+#registerpage {
+	min-height: 100vh;
+	background-color: rgb(47, 171, 102);
+}
+#registerpage #page-wrapper {
+	padding-left: 0px;
+}
+#registerpage #main {
+	text-align: center;
+	vertical-align: middle;
+}
+#registerpage #main img {
+	width: 150px;
+	margin-top: 10vh;
+	margin-bottom: 8vh;
+}
+#registerpage #content{
+	width: 300px;
+	margin: 0 auto;
+	text-align: left;
+}
+#registerpage label {
+	color: white;
+	font-weight: 400;
+}
+#registerpage label span {
 	display: none;
 }
-#loginpage .form-submit {
+#registerpage .form-item {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#registerpage input.form-text {
+	width: 284px;
+}
+#registerpage input {
+	width: 300px;
+}
+#registerpage .description {
+	display: none;
+}
+#registerpage .form-submit {
 	font-size: 1.1em;
 	font-weight: 500;
 	padding: 8px 20px;
 	background-color: #457552;
 }
-#loginpage p, #loginpage a {
+#registerpage p, #registerpage a {
 	text-align: center;
 	color: #C6C6C6;
 }
-
-/* Register - page */
-
-#loginpage #edit-field-user-avatar-und-0-upload {
+#registerpage #edit-field-user-avatar-und-0-upload {
 	padding-bottom: 10px;
 }
-
-#loginpage .password-strength {
+#registerpage .password-strength {
 	float: inherit;
 	width: 300px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-#loginpage .password-confirm {
+#registerpage .password-confirm {
 	display: none;
 }
-#loginpage .password-confirm.form-text {
+#registerpage .password-confirm.form-text {
 	display: inherit;
 }
-#loginpage .password-suggestions.description {
+#registerpage .password-suggestions.description {
 	display: none !important;
 }
-
-/* Page - groepen */
-
-.item-list ul {
+#registerpage #footer-wrapper {
+	padding-left: 0px;
 }
-.item-list ul li {
-	list-style: none;
-	margin: 0.4em 0;
-}
+
+

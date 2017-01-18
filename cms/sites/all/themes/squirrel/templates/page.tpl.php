@@ -105,7 +105,7 @@
         <?php print render($page['header']); ?>
             <div class="linkicon">
                 <?php if ($secondary_menu): ?>
-                    <a href="/node/add"><img src="<?php print base_path() . path_to_theme() . '/' . 'images/new.png'; ?>"/></a>
+                    <a href="/node/add/dienst"><img src="<?php print base_path() . path_to_theme() . '/' . 'images/new.png'; ?>"/></a>
                     <a href="/transactions"><img src="<?php print base_path() . path_to_theme() . '/' . 'images/squirrel.png'; ?>"/></a>
                     <div id="secondary-menu" class="dropdown navigation">
                         <a class="dropbtn">
@@ -190,7 +190,7 @@
                     </div> <!-- /#footer -->
                 <?php endif; ?>
 
-            </div></div> <!-- /.section, /#footer-wrapper -->
+        </div></div> <!-- /.section, /#footer-wrapper -->
 
   </div></div> <!-- /#page, /#page-wrapper -->
 -
